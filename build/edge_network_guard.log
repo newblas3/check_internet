@@ -1,0 +1,60 @@
+[2026-03-26 11:23:34] [ERROR] Unable to open config file: E:\OneDrive\Pyprogram\check_internet\build\check_network_config.json
+[2026-03-26 11:23:34] [INFO] Starting connectivity check.
+[2026-03-26 11:23:34] [INFO] Network probe failed. Checking Edge remote debugging endpoint.
+[2026-03-26 11:23:36] [INFO] Debug port is closed. Starting Edge with remote debugging.
+[2026-03-26 11:23:41] [INFO] Could not retrieve tabs. Opening target URL directly.
+[2026-03-26 11:24:01] [ERROR] Unable to open config file: E:\OneDrive\Pyprogram\check_internet\build\check_network_config.json
+[2026-03-26 11:24:09] [INFO] Starting connectivity check.
+[2026-03-26 11:24:09] [INFO] Network is reachable. Nothing to do.
+[2026-03-26 11:24:34] [INFO] Starting connectivity check.
+[2026-03-26 11:24:35] [INFO] Network is reachable. Nothing to do.
+[2026-03-26 11:25:34] [INFO] Starting connectivity check.
+[2026-03-26 11:25:34] [INFO] Network probe failed. Checking Edge remote debugging endpoint.
+[2026-03-26 11:25:35] [INFO] Debug port is closed. Starting Edge with remote debugging.
+[2026-03-26 11:25:41] [INFO] Could not retrieve tabs. Opening target URL directly.
+[2026-03-26 11:25:43] [INFO] Configuration reloaded successfully.
+[2026-03-26 11:29:05] [INFO] Starting connectivity check.
+[2026-03-26 11:29:05] [INFO] Network probe failed. Checking Edge remote debugging endpoint.
+[2026-03-26 11:29:06] [INFO] Debug port is closed. Starting Edge with remote debugging.
+[2026-03-26 11:29:11] [INFO] Could not retrieve tabs. Opening target URL directly.
+[2026-03-26 11:33:01] [INFO] Starting connectivity check.
+[2026-03-26 11:33:01] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:33:09] [INFO] Starting connectivity check.
+[2026-03-26 11:33:09] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:34:58] [INFO] Launched elevated installer instance.
+[2026-03-26 11:34:58] [INFO] Scheduled task installed successfully.
+[2026-03-26 11:35:23] [ERROR] Failed to delete scheduled task.
+[2026-03-26 11:36:04] [INFO] Launched elevated installer instance.
+[2026-03-26 11:36:04] [INFO] Scheduled task installed successfully.
+[2026-03-26 11:37:20] [INFO] Starting connectivity check.
+[2026-03-26 11:37:20] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:37:21] [INFO] Starting connectivity check.
+[2026-03-26 11:37:21] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:38:07] [INFO] Launched elevated installer instance.
+[2026-03-26 11:38:07] [INFO] Scheduled task installed successfully.
+[2026-03-26 11:39:00] [ERROR] Failed to delete scheduled task.
+[2026-03-26 11:39:37] [INFO] Starting connectivity check.
+[2026-03-26 11:39:37] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:40:53] [INFO] Launched elevated installer instance.
+[2026-03-26 11:40:53] [INFO] Scheduled task installed successfully.
+[2026-03-26 11:51:22] [INFO] Starting connectivity check.
+[2026-03-26 11:51:22] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:53:14] [INFO] Starting connectivity check.
+[2026-03-26 11:53:14] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:53:56] [INFO] Starting connectivity check.
+[2026-03-26 11:53:56] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:54:03] [INFO] Starting connectivity check.
+[2026-03-26 11:54:03] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:54:05] [INFO] Launched elevated installer instance.
+[2026-03-26 11:54:05] [INFO] Scheduled task installed successfully.
+[2026-03-26 11:54:19] [INFO] Launched elevated uninstall instance.
+[2026-03-26 11:54:19] [INFO] Scheduled task removed.
+[2026-03-26 11:54:59] [INFO] Starting connectivity check.
+[2026-03-26 11:54:59] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:55:02] [INFO] Starting connectivity check.
+[2026-03-26 11:55:02] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:55:09] [INFO] Starting connectivity check.
+[2026-03-26 11:55:09] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 11:56:34] [INFO] Configuration reloaded successfully.
+[2026-03-26 11:56:44] [INFO] Starting connectivity check.
+[2026-03-26 11:56:48] [INFO] All probe targets failed. Checking Edge remote debugging endpoint.

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\EdgeNetworkGuard.dir/objects.a
+D:\PROGRA~2\mingw64\bin\ar.exe qc CMakeFiles\EdgeNetworkGuard.dir/objects.a @CMakeFiles\EdgeNetworkGuard.dir\objects1.rsp
+D:\PROGRA~2\mingw64\bin\G__~1.EXE -g -mwindows -Wl,--whole-archive CMakeFiles\EdgeNetworkGuard.dir/objects.a -Wl,--no-whole-archive -o EdgeNetworkGuard.exe -Wl,--out-implib,libEdgeNetworkGuard.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EdgeNetworkGuard.dir\linkLibs.rsp

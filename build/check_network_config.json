@@ -1,0 +1,9 @@
+{
+  "test_host": "8.8.8.8",
+  "target_url": "http://192.168.2.135",
+  "edge_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "debug_port": 9222,
+  "check_interval_seconds": 10,
+  "startup_scope": "logon",
+  "log_file": "edge_network_guard.log"
+}

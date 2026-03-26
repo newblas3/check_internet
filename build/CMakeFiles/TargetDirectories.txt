@@ -1,0 +1,3 @@
+E:/OneDrive/Pyprogram/check_internet/build/CMakeFiles/EdgeNetworkGuard.dir
+E:/OneDrive/Pyprogram/check_internet/build/CMakeFiles/edit_cache.dir
+E:/OneDrive/Pyprogram/check_internet/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/OneDrive/Pyprogram/check_internet/src/app.rc
+resource.h
+E:/OneDrive/Pyprogram/check_internet/src/resource.h
+
+E:/OneDrive/Pyprogram/check_internet/src/resource.h
+
