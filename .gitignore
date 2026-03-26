@@ -13,7 +13,6 @@
 /install_manifest.txt
 
 # Binaries and libraries
-*.exe
 *.dll
 *.so
 *.dylib
