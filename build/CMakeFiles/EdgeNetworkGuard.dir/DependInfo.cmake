@@ -34,6 +34,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/OneDrive/Pyprogram/check_internet/src/network_probe.cpp" "CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.obj" "gcc" "CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.obj.d"
   "E:/OneDrive/Pyprogram/check_internet/src/task_scheduler_installer.cpp" "CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj" "gcc" "CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj.d"
   "E:/OneDrive/Pyprogram/check_internet/src/tray_app.cpp" "CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj" "gcc" "CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj.d"
+  "E:/OneDrive/Pyprogram/check_internet/src/wifi_manager.cpp" "CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj" "gcc" "CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -25,6 +25,7 @@
 #include <ipexport.h>
 #include <iphlpapi.h>
 #include <icmpapi.h>
+#include <wlanapi.h>
 #include <winhttp.h>
 #include <taskschd.h>
 #include <comdef.h>
@@ -54,6 +55,7 @@
 #pragma comment(lib, "iphlpapi.lib")
 #pragma comment(lib, "ws2_32.lib")
 #pragma comment(lib, "winhttp.lib")
+#pragma comment(lib, "wlanapi.lib")
 #pragma comment(lib, "taskschd.lib")
 #pragma comment(lib, "ole32.lib")
 #pragma comment(lib, "oleaut32.lib")

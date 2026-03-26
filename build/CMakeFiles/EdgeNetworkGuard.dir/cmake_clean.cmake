@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj.d"
   "CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj"
   "CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj.d"
+  "CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj"
+  "CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj.d"
   "EdgeNetworkGuard.exe"
   "EdgeNetworkGuard.exe.manifest"
   "EdgeNetworkGuard.pdb"

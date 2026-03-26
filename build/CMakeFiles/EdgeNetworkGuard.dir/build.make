@@ -131,11 +131,26 @@ CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.s"
 	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\OneDrive\Pyprogram\check_internet\src\network_probe.cpp -o CMakeFiles\EdgeNetworkGuard.dir\src\network_probe.cpp.s
 
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/flags.make
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/includes_CXX.rsp
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj: E:/OneDrive/Pyprogram/check_internet/src/wifi_manager.cpp
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj"
+	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj -MF CMakeFiles\EdgeNetworkGuard.dir\src\wifi_manager.cpp.obj.d -o CMakeFiles\EdgeNetworkGuard.dir\src\wifi_manager.cpp.obj -c E:\OneDrive\Pyprogram\check_internet\src\wifi_manager.cpp
+
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.i"
+	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\OneDrive\Pyprogram\check_internet\src\wifi_manager.cpp > CMakeFiles\EdgeNetworkGuard.dir\src\wifi_manager.cpp.i
+
+CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.s"
+	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\OneDrive\Pyprogram\check_internet\src\wifi_manager.cpp -o CMakeFiles\EdgeNetworkGuard.dir\src\wifi_manager.cpp.s
+
 CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/flags.make
 CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/includes_CXX.rsp
 CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj: E:/OneDrive/Pyprogram/check_internet/src/http_client.cpp
 CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj"
 	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj -MF CMakeFiles\EdgeNetworkGuard.dir\src\http_client.cpp.obj.d -o CMakeFiles\EdgeNetworkGuard.dir\src\http_client.cpp.obj -c E:\OneDrive\Pyprogram\check_internet\src\http_client.cpp
 
 CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: CMakeFiles/EdgeNetw
 CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/includes_CXX.rsp
 CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: E:/OneDrive/Pyprogram/check_internet/src/edge_controller.cpp
 CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj"
 	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj -MF CMakeFiles\EdgeNetworkGuard.dir\src\edge_controller.cpp.obj.d -o CMakeFiles\EdgeNetworkGuard.dir\src\edge_controller.cpp.obj -c E:\OneDrive\Pyprogram\check_internet\src\edge_controller.cpp
 
 CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj: CMakeFiles
 CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/includes_CXX.rsp
 CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj: E:/OneDrive/Pyprogram/check_internet/src/task_scheduler_installer.cpp
 CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj"
 	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj -MF CMakeFiles\EdgeNetworkGuard.dir\src\task_scheduler_installer.cpp.obj.d -o CMakeFiles\EdgeNetworkGuard.dir\src\task_scheduler_installer.cpp.obj -c E:\OneDrive\Pyprogram\check_internet\src\task_scheduler_installer.cpp
 
 CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj: CMakeFiles/EdgeNetworkGuar
 CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/includes_CXX.rsp
 CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj: E:/OneDrive/Pyprogram/check_internet/src/tray_app.cpp
 CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj: CMakeFiles/EdgeNetworkGuard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj"
 	D:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.obj -MF CMakeFiles\EdgeNetworkGuard.dir\src\tray_app.cpp.obj.d -o CMakeFiles\EdgeNetworkGuard.dir\src\tray_app.cpp.obj -c E:\OneDrive\Pyprogram\check_internet\src\tray_app.cpp
 
 CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.i: cmake_force
@@ -193,7 +208,7 @@ CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.s: cmake_force
 
 CMakeFiles/EdgeNetworkGuard.dir/src/app.rc.obj: CMakeFiles/EdgeNetworkGuard.dir/flags.make
 CMakeFiles/EdgeNetworkGuard.dir/src/app.rc.obj: E:/OneDrive/Pyprogram/check_internet/src/app.rc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building RC object CMakeFiles/EdgeNetworkGuard.dir/src/app.rc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building RC object CMakeFiles/EdgeNetworkGuard.dir/src/app.rc.obj"
 	D:\PROGRA~2\mingw64\bin\windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) E:\OneDrive\Pyprogram\check_internet\src\app.rc CMakeFiles\EdgeNetworkGuard.dir\src\app.rc.obj
 
 # Object files for target EdgeNetworkGuard
@@ -202,6 +217,7 @@ EdgeNetworkGuard_OBJECTS = \
 "CMakeFiles/EdgeNetworkGuard.dir/src/app_config.cpp.obj" \
 "CMakeFiles/EdgeNetworkGuard.dir/src/logger.cpp.obj" \
 "CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.obj" \
+"CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj" \
 "CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj" \
 "CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj" \
 "CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj" \
@@ -215,6 +231,7 @@ EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/main.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/app_config.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/logger.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/network_probe.cpp.obj
+EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/http_client.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/src/task_scheduler_installer.cpp.obj
@@ -224,7 +241,7 @@ EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/build.make
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/linkLibs.rsp
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/objects1.rsp
 EdgeNetworkGuard.exe: CMakeFiles/EdgeNetworkGuard.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable EdgeNetworkGuard.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\OneDrive\Pyprogram\check_internet\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable EdgeNetworkGuard.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EdgeNetworkGuard.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

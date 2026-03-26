@@ -315,6 +315,9 @@ CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/windot11.h \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/wlantypes.h \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/icmpapi.h \
+ D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/wlanapi.h \
+ D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/l2cmn.h \
+ D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/eaptypes.h \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/winhttp.h \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/taskschd.h \
  D:/Program\ Files/mingw64/x86_64-w64-mingw32/include/comdef.h \
@@ -532,4 +535,5 @@ CMakeFiles/EdgeNetworkGuard.dir/src/edge_controller.cpp.obj: \
  D:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \
  E:\OneDrive\Pyprogram\check_internet\src\http_client.h \
  E:\OneDrive\Pyprogram\check_internet\src\logger.h \
- E:\OneDrive\Pyprogram\check_internet\src\network_probe.h
+ E:\OneDrive\Pyprogram\check_internet\src\network_probe.h \
+ E:\OneDrive\Pyprogram\check_internet\src\wifi_manager.h

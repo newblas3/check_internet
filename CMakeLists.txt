@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(EdgeNetworkGuard VERSION 1.0 LANGUAGES CXX)
+project(EdgeNetworkGuard VERSION 1.0 LANGUAGES CXX RC)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,6 +11,7 @@ add_executable(EdgeNetworkGuard WIN32
     src/app_config.cpp
     src/logger.cpp
     src/network_probe.cpp
+    src/wifi_manager.cpp
     src/http_client.cpp
     src/edge_controller.cpp
     src/task_scheduler_installer.cpp
@@ -34,5 +35,6 @@ target_link_libraries(EdgeNetworkGuard PRIVATE
     oleaut32
     taskschd
     winhttp
+    wlanapi
     ws2_32
 )

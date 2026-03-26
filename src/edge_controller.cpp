@@ -51,7 +51,7 @@ std::optional<std::wstring> ExtractField(const std::wstring& object, const std::
 } // namespace
 
 EdgeController::EdgeController(const AppConfig& config, Logger& logger)
-    : config_(config), logger_(logger) {
+    : config_(config), logger_(logger), wifiManager_(logger_) {
 }
 
 CheckResult EdgeController::ExecuteCheck() {
@@ -60,6 +60,19 @@ CheckResult EdgeController::ExecuteCheck() {
         if (probe_.IsHostReachable(host, 2000)) {
             logger_.Info(L"Network is reachable through probe target: " + host);
             return CheckResult::Healthy;
+        }
+    }
+
+    if (!config_.wifiSsid.empty()) {
+        logger_.Info(L"All probe targets failed. Attempting Wi-Fi recovery for SSID: " + config_.wifiSsid);
+        if (wifiManager_.EnsureConnected(config_.wifiSsid)) {
+            Sleep(config_.wifiReconnectWaitSeconds * 1000);
+            for (const auto& host : config_.testHosts) {
+                if (probe_.IsHostReachable(host, 2000)) {
+                    logger_.Info(L"Network recovered after Wi-Fi reconnect.");
+                    return CheckResult::RemediationTriggered;
+                }
+            }
         }
     }
 

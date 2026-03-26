@@ -141,6 +141,9 @@ bool ConfigManager::Load(AppConfig& config, std::wstring& error) const {
     if (const auto value = ExtractString(json, L"edge_path")) {
         config.edgePath = *value;
     }
+    if (const auto value = ExtractString(json, L"wifi_ssid")) {
+        config.wifiSsid = *value;
+    }
     if (const auto value = ExtractString(json, L"startup_scope")) {
         config.startupScope = *value;
     }
@@ -152,6 +155,9 @@ bool ConfigManager::Load(AppConfig& config, std::wstring& error) const {
     }
     if (const auto value = ExtractUInt(json, L"check_interval_seconds")) {
         config.checkIntervalSeconds = *value;
+    }
+    if (const auto value = ExtractUInt(json, L"wifi_reconnect_wait_seconds")) {
+        config.wifiReconnectWaitSeconds = *value;
     }
 
     if (config.targetUrl.empty()) {
@@ -169,6 +175,9 @@ bool ConfigManager::Load(AppConfig& config, std::wstring& error) const {
     if (config.checkIntervalSeconds == 0) {
         error = L"Config field check_interval_seconds must be greater than zero.";
         return false;
+    }
+    if (config.wifiReconnectWaitSeconds == 0) {
+        config.wifiReconnectWaitSeconds = 8;
     }
 
     return true;

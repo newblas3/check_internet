@@ -328,6 +328,30 @@ src/tray_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EdgeNetworkGuard.dir\build.make CMakeFiles/EdgeNetworkGuard.dir/src/tray_app.cpp.s
 .PHONY : src/tray_app.cpp.s
 
+src/wifi_manager.obj: src/wifi_manager.cpp.obj
+.PHONY : src/wifi_manager.obj
+
+# target to build an object file
+src/wifi_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EdgeNetworkGuard.dir\build.make CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.obj
+.PHONY : src/wifi_manager.cpp.obj
+
+src/wifi_manager.i: src/wifi_manager.cpp.i
+.PHONY : src/wifi_manager.i
+
+# target to preprocess a source file
+src/wifi_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EdgeNetworkGuard.dir\build.make CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.i
+.PHONY : src/wifi_manager.cpp.i
+
+src/wifi_manager.s: src/wifi_manager.cpp.s
+.PHONY : src/wifi_manager.s
+
+# target to generate assembly for a file
+src/wifi_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EdgeNetworkGuard.dir\build.make CMakeFiles/EdgeNetworkGuard.dir/src/wifi_manager.cpp.s
+.PHONY : src/wifi_manager.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -362,6 +386,9 @@ help:
 	@echo ... src/tray_app.obj
 	@echo ... src/tray_app.i
 	@echo ... src/tray_app.s
+	@echo ... src/wifi_manager.obj
+	@echo ... src/wifi_manager.i
+	@echo ... src/wifi_manager.s
 .PHONY : help
 
 

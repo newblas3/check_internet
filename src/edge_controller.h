@@ -4,6 +4,7 @@
 #include "http_client.h"
 #include "logger.h"
 #include "network_probe.h"
+#include "wifi_manager.h"
 
 enum class CheckResult {
     Healthy,
@@ -32,5 +33,6 @@ private:
     const AppConfig& config_;
     Logger& logger_;
     NetworkProbe probe_;
+    WifiManager wifiManager_;
     HttpClient client_;
 };

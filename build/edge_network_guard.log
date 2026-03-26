@@ -58,3 +58,12 @@
 [2026-03-26 11:56:34] [INFO] Configuration reloaded successfully.
 [2026-03-26 11:56:44] [INFO] Starting connectivity check.
 [2026-03-26 11:56:48] [INFO] All probe targets failed. Checking Edge remote debugging endpoint.
+[2026-03-26 11:56:49] [INFO] Debug port is closed. Starting Edge with remote debugging.
+[2026-03-26 11:56:54] [INFO] Could not retrieve tabs. Opening target URL directly.
+[2026-03-26 11:57:04] [INFO] Starting connectivity check.
+[2026-03-26 11:57:10] [INFO] All probe targets failed. Checking Edge remote debugging endpoint.
+[2026-03-26 11:57:11] [INFO] Debug port is closed. Starting Edge with remote debugging.
+[2026-03-26 12:08:03] [INFO] Starting connectivity check.
+[2026-03-26 12:08:03] [INFO] Network is reachable through probe target: 8.8.8.8
+[2026-03-26 12:08:26] [INFO] Configuration reloaded successfully.
+[2026-03-26 12:08:36] [INFO] Starting connectivity check.
