@@ -25,4 +25,4 @@ cmake --build build
 - `target_url`: page to open or refresh when all probe targets fail.
 - `check_interval_seconds`: interval between checks in seconds.
 
-The app reads `check_network_config.json` from the executable directory.
+The app reads `check_network_config.json` from the same executable directory.
