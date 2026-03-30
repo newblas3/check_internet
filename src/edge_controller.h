@@ -24,6 +24,8 @@ private:
         std::wstring webSocketDebuggerUrl;
     };
 
+    bool IsInternetAvailable();
+    void LogProbeDiagnostics();
     bool StartEdgeWithDebugPort();
     bool OpenTargetPage();
     std::vector<TabInfo> FetchTabs();

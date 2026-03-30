@@ -56,27 +56,28 @@ EdgeController::EdgeController(const AppConfig& config, Logger& logger)
 
 CheckResult EdgeController::ExecuteCheck() {
     logger_.Info(L"Starting connectivity check.");
-    for (const auto& host : config_.testHosts) {
-        if (probe_.IsHostReachable(host, 2000)) {
-            logger_.Info(L"Network is reachable through probe target: " + host);
-            return CheckResult::Healthy;
-        }
+    if (IsInternetAvailable()) {
+        logger_.Info(L"Internet connectivity check succeeded.");
+        return CheckResult::Healthy;
     }
+
+    logger_.Info(L"Internet connectivity check failed.");
+    LogProbeDiagnostics();
 
     if (!config_.wifiSsid.empty()) {
-        logger_.Info(L"All probe targets failed. Attempting Wi-Fi recovery for SSID: " + config_.wifiSsid);
+        logger_.Info(L"Attempting Wi-Fi recovery for SSID: " + config_.wifiSsid);
         if (wifiManager_.EnsureConnected(config_.wifiSsid)) {
             Sleep(config_.wifiReconnectWaitSeconds * 1000);
-            for (const auto& host : config_.testHosts) {
-                if (probe_.IsHostReachable(host, 2000)) {
-                    logger_.Info(L"Network recovered after Wi-Fi reconnect.");
-                    return CheckResult::RemediationTriggered;
-                }
+            if (IsInternetAvailable()) {
+                logger_.Info(L"Internet connectivity recovered after Wi-Fi reconnect.");
+                return CheckResult::RemediationTriggered;
             }
+            logger_.Info(L"Wi-Fi reconnect completed, but HTTP connectivity is still unavailable.");
+            LogProbeDiagnostics();
         }
     }
 
-    logger_.Info(L"All probe targets failed. Checking Edge remote debugging endpoint.");
+    logger_.Info(L"Checking Edge remote debugging endpoint.");
     if (!probe_.IsTcpPortOpen(L"127.0.0.1", config_.debugPort, 1000)) {
         logger_.Info(L"Debug port is closed. Starting Edge with remote debugging.");
         if (!StartEdgeWithDebugPort()) {
@@ -99,6 +100,44 @@ CheckResult EdgeController::ExecuteCheck() {
 
     logger_.Info(L"Target tab not found. Opening target URL.");
     return OpenTargetPage() ? CheckResult::RemediationTriggered : CheckResult::Failed;
+}
+
+bool EdgeController::IsInternetAvailable() {
+    if (config_.connectivityCheckUrl.empty()) {
+        for (const auto& host : config_.testHosts) {
+            if (probe_.IsHostReachable(host, 2000)) {
+                logger_.Info(L"HTTP connectivity check is disabled. Falling back to probe target: " + host);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    const auto response = client_.Get(config_.connectivityCheckUrl, 3000);
+    if (!response) {
+        logger_.Info(L"Connectivity URL did not respond: " + config_.connectivityCheckUrl);
+        return false;
+    }
+
+    const auto expectedStatus = static_cast<DWORD>(config_.connectivityExpectedStatus);
+    if (response->statusCode != expectedStatus) {
+        logger_.Info(L"Connectivity URL returned unexpected status " + std::to_wstring(response->statusCode) +
+                     L", expected " + std::to_wstring(expectedStatus) + L". URL: " + config_.connectivityCheckUrl);
+        return false;
+    }
+
+    return true;
+}
+
+void EdgeController::LogProbeDiagnostics() {
+    for (const auto& host : config_.testHosts) {
+        if (probe_.IsHostReachable(host, 2000)) {
+            logger_.Info(L"Probe target is reachable, but HTTP connectivity is still unavailable: " + host);
+            return;
+        }
+    }
+
+    logger_.Info(L"All probe targets are unreachable.");
 }
 
 bool EdgeController::StartEdgeWithDebugPort() {

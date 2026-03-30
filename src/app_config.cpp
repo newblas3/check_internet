@@ -135,6 +135,12 @@ bool ConfigManager::Load(AppConfig& config, std::wstring& error) const {
     } else if (!config.testHost.empty()) {
         config.testHosts = {config.testHost};
     }
+    if (const auto value = ExtractString(json, L"connectivity_check_url")) {
+        config.connectivityCheckUrl = *value;
+    }
+    if (const auto value = ExtractUInt(json, L"connectivity_expected_status")) {
+        config.connectivityExpectedStatus = static_cast<uint16_t>(*value);
+    }
     if (const auto value = ExtractString(json, L"target_url")) {
         config.targetUrl = *value;
     }
@@ -170,6 +176,10 @@ bool ConfigManager::Load(AppConfig& config, std::wstring& error) const {
     }
     if (config.testHosts.empty()) {
         error = L"At least one probe target is required in test_host or test_hosts.";
+        return false;
+    }
+    if (config.connectivityExpectedStatus == 0) {
+        error = L"Config field connectivity_expected_status must be greater than zero.";
         return false;
     }
     if (config.checkIntervalSeconds == 0) {

@@ -5,6 +5,8 @@
     "223.5.5.5"
   ],
   "test_host": "8.8.8.8",
+  "connectivity_check_url": "https://baidu.com",
+  "connectivity_expected_status": 204,
   "wifi_ssid": "SCUNET",
   "target_url": "http://192.168.2.135",
   "edge_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",

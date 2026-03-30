@@ -5,6 +5,8 @@
 struct AppConfig {
     std::wstring testHost = L"8.8.8.8";
     std::vector<std::wstring> testHosts{L"8.8.8.8"};
+    std::wstring connectivityCheckUrl = L"http://connect.rom.miui.com/generate_204";
+    uint16_t connectivityExpectedStatus = 204;
     std::wstring targetUrl = L"http://192.168.2.135";
     std::wstring edgePath = L"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe";
     std::wstring wifiSsid;
